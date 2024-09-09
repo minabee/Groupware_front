@@ -107,6 +107,7 @@
 }
 
 /*=================================== css 추가 ===================================*/
+/* card-top */
 .card-top{
   display: flex;
   justify-content: space-between;
@@ -122,6 +123,7 @@
   max-width: 90px;
 }
 
+/* 테이블 사이즈 */
 .th-50{
   width: 50px;
 }
@@ -131,13 +133,33 @@
 .th-100{
   width: 100px;
 }
-
+.table-link{
+  color: #696cff;
+  cursor: pointer;
+}
 .edit-btn{
   display: inline-block;
   margin-right: 8px;
   cursor: pointer;
 }
 
+/* 본문 헤더 */
+.container-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+}
+.container-top h4{
+  font-weight: bold;
+  margin: 0;
+}
+.container-top-btn{
+  display: flex;
+  gap: 8px;
+}
+
+/* 뷰페이지 */
 .view-wrap{
   display: flex;
   width: 100%;
@@ -160,7 +182,67 @@
   max-width: 80px;
 }
 
+/* 게시판 뷰페이지 */
+.board-view{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.board-content-title{
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #eee;
+}
+.board-content-title h4{
+  margin: 0 0 14px;
+}
+.writer-info{
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+.article-info,
+.comment-date{
+  color: #979797;
+  font-size: 12px;
+}
+.profile-info,
+.article-info{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.profile-info img,
+.comment-box img{
+  width: 30px;
+  height: 30px;
+}
+.board-comment{
+  border-top: 10px solid #f9f9f9;
+  padding-top: 24px;
+}
+.comment-box{
+  display: flex;
+  gap: 8px;
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+}
+.comment-box:first-child{
+  border-top: none;
+  padding: 0 0 10px;
+}
+.comment-name{
+  font-weight: bold;
+}
+.comment-submit{
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+}
 
+
+
+/* 반응형 */
 @media screen and (max-width: 768px){
   .view-wrap{
     flex-direction: column;
