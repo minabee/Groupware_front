@@ -180,13 +180,49 @@
               <div class="col-md-6">
                 <div class="card">
                   <div class="card-body">
-                      <div class="mb-3">
+                    <div class="view-wrap">
+                      <div class="view-inner">
+                        <div class="view-box">
+                          <div class="view-title">회사명</div>
+                          <div class="view-desc">xxx</div>
+                        </div>
+                        <div class="view-box">
+                          <div class="view-title">로고</div>
+                          <div class="view-desc">
+                            <img src="../assets/img/default.jpg" alt="logo" class="view-desc-logo" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                     
+                      <div class="mt-5">
+                        <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCompanySet">등록</button>
+                        <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCompanyUpdate">수정</button>
+                      </div>
+                </div>
+              </div>
+
+              <!-- Modal -->
+              <!-- 등록 Modal -->
+              <div class="modal modal-top fade" id="modalCompanySet" tabindex="-1">
+                <div class="modal-dialog">
+                  <form class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title fw-bold" id="modalTopTitle">회사</h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                         <div class="mb-3">
                         <label class="form-label" for="companyName">회사명</label>
                         <input type="text" class="form-control" id="companyName" placeholder="회사명을 입력해주세요" />
                       </div>
                       <div class="mb-3">
                         <label class="form-label" for="companyLogo">회사로고</label>
-                        <!-- <input type="file" class="form-control" id="companyLogo" /> -->
                         <div class="d-flex align-items-start align-items-sm-center gap-4">
                           <img
                             src="../assets/img/default.jpg"
@@ -217,13 +253,78 @@
                           </div>
                         </div>
                       </div>
-                      <div class="mt-5">
-                        <button type="submit" class="btn btn-primary">저장</button>
-                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                        닫기
+                      </button>
+                      <button type="button" class="btn btn-primary">저장</button>
+                    </div>
+                  </form>
                 </div>
               </div>
-                  
+              <!-- 수정 Modal -->
+              <div class="modal modal-top fade" id="modalCompanyUpdate" tabindex="-1">
+                <div class="modal-dialog">
+                  <form class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title fw-bold" id="modalTopTitle">회사</h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                         <div class="mb-3">
+                        <label class="form-label" for="companyName">회사명</label>
+                        <input type="text" class="form-control" id="companyName" placeholder="회사명을 입력해주세요" />
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label" for="companyLogo">회사로고</label>
+                        <div class="d-flex align-items-start align-items-sm-center gap-4">
+                          <img
+                            src="../assets/img/default.jpg"
+                            alt="사용자"
+                            class="d-block rounded"
+                            height="80"
+                            width="200"
+                            id="uploadedAvatar"
+                          />
+                          <div class="button-wrapper">
+                            <label for="upload" class="btn btn-sm btn-secondary me-2 mb-4" tabindex="0">
+                              <span class="d-none d-sm-block">사진업로드</span>
+                              <i class="bx bx-upload d-block d-sm-none"></i>
+                              <input
+                                type="file"
+                                id="upload"
+                                class="account-file-input"
+                                hidden
+                                accept="image/png, image/jpeg"
+                              />
+                            </label>
+                            <button type="button" class="btn btn-sm btn-outline-secondary account-image-reset mb-4">
+                              <i class="bx bx-reset d-block d-sm-none"></i>
+                              <span class="d-none d-sm-block">초기화</span>
+                            </button>
+  
+                            <p class="text-muted mb-0">JPG, GIF , PNG. 최대크기 800K</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                        닫기
+                      </button>
+                      <button type="button" class="btn btn-primary">저장</button>
+                    </div>
+                  </form>
                 </div>
+              </div>
+              <!--/ Modal -->
+            </div>
               
             <!-- / Content -->
 

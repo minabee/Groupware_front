@@ -181,6 +181,9 @@
   border-radius: 50%;
   max-width: 80px;
 }
+.view-desc-logo{
+  max-width: 200px;
+}
 
 /* 게시판 뷰페이지 */
 .board-view{
