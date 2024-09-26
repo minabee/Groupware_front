@@ -241,6 +241,12 @@
   display: flex;
   gap: 8px;
   margin-top: 14px;
+ 
+}
+.comment-btn{
+  max-height: 40px; 
+  min-width: 71px;
+  padding: 8px 0; 
 }
 
 
