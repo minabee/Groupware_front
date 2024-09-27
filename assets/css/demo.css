@@ -241,6 +241,9 @@
 .comment-name{
   font-weight: bold;
 }
+.comment-edit>.bx-trash{
+	cursor: pointer;
+}
 .comment-submit{
   display: flex;
   gap: 8px;
