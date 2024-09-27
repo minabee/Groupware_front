@@ -226,13 +226,17 @@
 }
 .comment-box{
   display: flex;
-  gap: 8px;
+  justify-content: space-between;
   padding: 10px 0;
   border-top: 1px solid #eee;
 }
 .comment-box:first-child{
   border-top: none;
   padding: 0 0 10px;
+}
+.comment-item{
+  display: flex;
+  gap: 8px;
 }
 .comment-name{
   font-weight: bold;
